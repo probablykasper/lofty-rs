@@ -1,5 +1,6 @@
 use crate::aac::AacFile;
 use crate::ape::ApeFile;
+use crate::ebml::EbmlFile;
 use crate::error::Result;
 use crate::file::{AudioFile, FileType, FileTypeGuessResult, TaggedFile};
 use crate::flac::FlacFile;
@@ -16,7 +17,6 @@ use crate::ogg::vorbis::VorbisFile;
 use crate::resolve::CUSTOM_RESOLVERS;
 use crate::wavpack::WavPackFile;
 
-use crate::ebml::EbmlFile;
 use std::fs::File;
 use std::io::{BufReader, Cursor, Read, Seek, SeekFrom};
 use std::path::Path;
